@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #191919;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  width: 928px;
+  display: flex;
+  overflow-x: scroll; /*Cоздает скролл в области этого родителя 900 пикселей */
+}
+
+.gallery div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
+  padding: 20px;
+}
+
+.gallery div img {
+    filter: blur(100%);  /*Фильтр на фото яркость 50%*/
+    transition: transform 0.8s; /*Анимация при наведении курсором плавная 0.8 сек*/
+
+}
+
+.gallery div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1); /*Анимация при наведении расширается */
+}
+
+.gallery::-webkit-scrollbar {
+  display: none; /*Убрал горизонтальный скрол */
+}
+
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+/*BTN margin right NEXT */
+
+.btn-right {
+  margin-left: 20px;
+}
+
+.btn-left {
+  margin-right: 20px;
+}
+
