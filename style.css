@@ -48,7 +48,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10% auto;
+  margin: 50px auto;
 }
 
 /*BTN margin right NEXT */
@@ -59,5 +59,54 @@ header {
 
 .btn-left {
   margin-right: 20px;
+}
+
+/*Section Footer*/
+
+.footer {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  height: 100%;
+  color: #999;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__content {
+  padding: 15px;
+  text-align: center;
+}
+
+/*Footer text style*/
+
+.footer__header {
+  color: white;
+}
+
+.footer__text {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/*Socials links style*/
+
+.footer__list {
+
+  list-style-type: none;
+}
+
+.footer__list li {
+  display: inline-block;
+}
+
+.footer__item i {
+  margin-left:10px ;
+}
+.footer__item i:hover {
+  color: #888;
+  cursor: pointer;
 }
 
